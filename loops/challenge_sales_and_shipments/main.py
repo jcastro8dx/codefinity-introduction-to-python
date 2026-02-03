@@ -17,6 +17,6 @@ for index in range(len(products)):
 
 for index in range(len(products)):
     products[index][1] += shipment_received[index][1]
-    #print(f"Final stock levels for all products: {products[index]}")
-
+    
+# Observe above how a pair of square brackets is used to index the elements of a nested list of lists.
 print(f"Final stock levels for all products: {products}")
