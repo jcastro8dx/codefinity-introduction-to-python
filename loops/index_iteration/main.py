@@ -9,5 +9,5 @@ for index in range(len(prices)):
         prices[index] -= prices[index] * 0.15
     elif index == 3:
         prices[index] -= prices[index] * 0.05
-    print(f"Upadated price for item {index}: ${prices[index]:.2f}")
+    print(f"Upadated price for item {index + 1}: ${prices[index]:.2f}")
         
