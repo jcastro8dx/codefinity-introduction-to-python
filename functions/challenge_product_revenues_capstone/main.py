@@ -13,7 +13,7 @@ def calculate_revenue(prices, quantities_sold):
 def formatted_output(revenues):
     sorted(revenue_per_product)
     for index in range(len(revenue_per_product)):
-        print(f"{revenue_per_product[0]} has total revenue of ${revenue_per_product[1]}")
+        print(f"{revenue_per_product[index][0]} has total revenue of ${revenue_per_product[index][1]}")
     
 
 revenue = calculate_revenue(prices, quantities_sold)
