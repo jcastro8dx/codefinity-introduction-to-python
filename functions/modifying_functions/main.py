@@ -7,8 +7,8 @@ def apply_tax(price, tax=0.07):
     return price
 
 def calculate_total(price, discount=0.05, tax=0.07):
-    apply_discount(price, discount)
-    apply_tax(price, tax)
+    price = apply_discount(price, discount)
+    price = apply_tax(price, tax)
     return price
 
 total_price_default = calculate_total(price = 120)
