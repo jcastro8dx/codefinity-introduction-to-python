@@ -9,7 +9,8 @@ quantities_sold = [50, 100, 25, 40]
 
 # the zip function creates a list of tuples
 combined_list = zip(products, prices, quantities_sold)
-# sorted() sorts by product name in ascending order
+# sorted() sorts by product name (since this is the first element
+# on the list of tuples) in ascending order
 sorted_products = sorted(combined_list)
 
 for index in range(len(sorted_products)):
