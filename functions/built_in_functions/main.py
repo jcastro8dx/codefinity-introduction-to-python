@@ -5,8 +5,8 @@ products = {
     "Cherry": ["2.50", "25"],
     "Mango": ["1.75", "40"]
 }
-total_sales_list = []
 
+total_sales_list = []
 keys = list(products)
 for index in range(len(products)):
     product_name = keys[index]
