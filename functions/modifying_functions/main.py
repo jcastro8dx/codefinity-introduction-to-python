@@ -2,13 +2,13 @@ def apply_discount(price, discount=0.05):
     price = price*(1-discount)
     return price
 
-def aplly_tax(price, tax=0.07):
+def apply_tax(price, tax=0.07):
     price = price + price*tax
     return price
 
 def calculate_total(price, discount=0.05, tax=0.07):
     apply_discount(price, discount)
-    aplly_tax(price, tax)
+    apply_tax(price, tax)
     return price
 
 total_price_default = calculate_total(price = 120)
