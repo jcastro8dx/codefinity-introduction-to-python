@@ -7,11 +7,11 @@ def calculate_revenue(prices, quantities_sold):
     revenue = []
     for index in range(len(products)):
         dummy = prices[index]*quantities_sold[index]
-        revenue[index].append(dummy)
+        revenue.append(dummy)
     return revenue
 
 def formatted_output(revenues):
-    sort(revenue_per_product)
+    sorted(revenue_per_product)
     for index in range(len(revenue_per_product)):
         print(f"{revenue_per_product[0]} has total revenue of ${revenue_per_product[1]}")
     
