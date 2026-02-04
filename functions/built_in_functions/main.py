@@ -13,9 +13,10 @@ for index in range(len(products)):
     product_values = products[keys[index]]
     price_float = float(product_values[0])
     quantity_sold_int = int(product_values[1])
-    total_sales = total_sales + price_float*quantity_sold_int
+    total_sales = price_float*quantity_sold_int
     total_sales_list = total_sales_list.append(total_sales)
-    print(f"Total sales for {products[index]}: ${total_sales}")
+    
+    print(f"Total sales for {products[keys[index]]}: ${total_sales}")
 
 total_sum = sum(total_sales_list)
 min_sales = min(total_sales_list)
