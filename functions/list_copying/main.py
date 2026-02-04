@@ -6,9 +6,7 @@ def apply_discount(prices):
     for index in range(len(prices_copy)):
         if prices_copy[index] > 2 : 
             prices_copy[index] = prices_copy[index] * (1-0.10)
-
     return prices_copy
-
 
 # Call the function and store the updated prices
 updated_prices = apply_discount(product_prices)
